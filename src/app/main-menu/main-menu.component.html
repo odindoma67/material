@@ -1,0 +1,18 @@
+<a mat-raised-button color="secondary" [routerLink]="['home']">Home</a>
+<a mat-raised-button color="secondary" [routerLink]="['about']">About Us</a>
+<a mat-raised-button color="secondary" [routerLink]="['services']"
+   [matMenuTriggerFor]="menu">
+  Services<mat-icon>arrow_drop_down</mat-icon>
+</a>
+<a mat-raised-button color="secondary" [routerLink]="['contacts']">Contacts</a>
+
+<mat-menu #menu="matMenu">
+  <a mat-button [routerLink]="['web']">Web Design</a>
+  <div></div>
+  <a mat-button [routerLink]="['app']">Mobile App</a>
+</mat-menu>
+
+
+
+
+
